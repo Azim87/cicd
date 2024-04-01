@@ -26,6 +26,7 @@ jobs:
       - run: flutter pub get
       - run: flutter test
       - run: flutter build apk --debug --split-per-abi
+
       - name: Push to Release
         uses: ncipollo/release-action@v1
         with:
